@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UIKit :: a CSS Framework for User Interface</title>
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<link rel="stylesheet" href="css/uikit.gradient.min.css">
+	<link rel="stylesheet" href="css/uikit.almost-flat.min.css">
+	<link rel="stylesheet" href="css/components/slideshow.almost-flat.min.css">
+	<link rel="stylesheet" href="css/components/slider.almost-flat.min.css">
+	<link rel="stylesheet" href="css/components/slidenav.almost-flat.min.css">
+	<link rel="stylesheet" href="css/components/dotnav.almost-flat.min.css">
+	<link rel="stylesheet" href="css/components/sticky.almost-flat.min.css">
+	<link rel="stylesheet" href="css/uikit-modifyed.css">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/uikit.min.js"></script>
+
+
+</head>
+<body>
+	<!-- some space above -->
+	<div class="logo-wrapper">
+		<!-- for logo -->
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-small-3-10 uk-width-medium-4-10 uk-width-large-3-10">
+					<a href="http://softtech-it.com"><img src="logos/logo.png" alt=""></a>
+				</div>
+				<div class="uk-width-small-7-10 uk-width-medium-6-10 uk-width-large-7-10 uk-text-right">
+					<h1 class="uk-text-left">This Is Header Area</h1>
+					<p>-Shah Mahbubur Rahman. +8801714497282</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Main menu start -->
+	<div class="menu-wrapper" data-uk-sticky>
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<!-- auto rotation, nav control -->
+					<nav class="uk-navbar uk-navbar-attched uk-navbar-fixed">
+				<ul class="uk-navbar-nav uk-nav-parent-icon uk-hidden-small">
+					<li><a href="#"><i class="uk-icon-home .uk-icon-medium"></i>Home</a></li>
+					
+					<!-- optionaly add to attribute to submenu on click rather then hober: ="{mode:'click'}" -->
+					<li class="uk-parent" data-uk-dropdown="{mode:'hover'}">
+						<a href="#">menu option 2</a>
+						<div class="uk-dropdown uk-dropdown-navbar">
+							<ul class="uk-nav uk-nav-navbar">
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Another item</a></li>
+								<li class="uk-nav-header">Header</li>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Another item</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#">Separated item</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="uk-parent" data-uk-dropdown="{mode:'hover'}">
+						<a href="#">menu option 3</a>
+						<div class="uk-dropdown uk-dropdown-navbar">
+							<ul class="uk-nav uk-nav-navbar">
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Another item</a></li>
+								<li class="uk-nav-header">Header</li>
+								<li><a href="#">Item</a></li>
+								<li><a href="#">Another item</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#">Separated item</a></li>
+							</ul>
+						</div>
+					</li>
+					<!-- <li><a href="#">menu option 4</a></li> --> 
+					<li><a href="#mahbub" data-uk-offcanvas>Mobile Menu</a></li>
+				</ul>
+						<!-- this creates the hambutger icon, modes=push, slide, reveal, none -->
+					<li class="uk-visible-small"><a class="uk-navbar-toggle" href="#mahbub" data-uk-offcanvas="{mode:'slide'}">Click for Mobile Menu...</a></li>
+			</nav>
+
+			<div id="mahbub" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+					<ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+						<li><a href="#"><i class="uk-icon-home .uk-icon-medium"></i>Home3</a></li>
+						<li class="uk-parent"><a href="#">menu option2</a>
+							<ul class="uk-nav-sub">
+								<li><a href="#">sub option 1</a></li>
+								<li><a href="#">sub option 2</a></li>
+								<li><a href="#">sub option 3</a></li>
+								<li><a href="#">sub option 4</a></li>
+							</ul>							
+						</li>
+						<li class="uk-parent"><a href="#">menu option 3</a>
+							<ul class="uk-nav-sub">
+								<li><a href="#">sub option 1</a></li>
+								<li><a href="#">sub option 2</a></li>
+								<li><a href="#">sub option 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">menu option 4</a></li>
+						<li><a href="#">menu option 5</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	<!-- Menu Navbar Ends -->
+	
+	<!-- Slideshow Start -->
+	<div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true, autoplayInterval: 3000, duration:1000, animation: 'scale', kenburns:true}">
+		<ul class="uk-slideshow uk-overlay-active">
+			<li><img src="images/tablet_1024x300.jpg" alt=""></li>
+			<li><img src="images/fiber-optic-1024x300.jpg" alt=""></li>
+			<li><img src="images/background.jpg" alt=""></li>
+			<li><img src="images/100216_HiddenGalaxies_H.jpg" alt="">
+				<div class="uk-overlay-panel uk-overlay-background uk-overlay-slide-bottom">
+					<h3 class="uk-text-center">Overlay Title Text</h3>
+					<p class="uk-text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+			</li>
+			
+			<li><img src="images/clouds-sky-header-2064-1024x300.jpg" alt="">								
+				<div class="uk-overlay-panel uk-overlay-background uk-overlay-left uk-overlay-slide-left uk-width-1-4">
+					<h3>Shah Mahbubur Rahman</h3>
+					<p>Mobile # +8801714497282</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="uk-panel uk-panel-box">
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<img class="uk-align-left" src="images/girl2.jpeg" alt="">
+							<h3 class="uk-panel-title">Overlay Title Text 3</h3>
+							<p class="dark-text">3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<iframe width="1200" height="528" src="https://www.youtube.com/embed/vcpD44bfUDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</li>
+		</ul>
+						
+	<a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+	<a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+
+	<ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
+		<li data-uk-slideshow-item="0"><a href=""></a></li>
+		<li data-uk-slideshow-item="1"><a href=""></a></li>
+		<li data-uk-slideshow-item="2"><a href=""></a></li>
+		<li data-uk-slideshow-item="3"><a href=""></a></li>
+		<li data-uk-slideshow-item="4"><a href=""></a></li>
+		<li data-uk-slideshow-item="5"><a href=""></a></li>
+		<li data-uk-slideshow-item="6"><a href=""></a></li>
+	</ul>
+</div>
+<!-- End Slide Show -->		
+		
+<!-- contant area -->
+<div class="uk-container uk-container-center main-content">
+	
+		<div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match="{target:'.uk-panel'}">
+			<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<div class="uk-badge uk-panel-badge uk-badge-danger">New!</div>
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-pencil-square uk-icon-medium"></i>Clean Theme</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries It has survived</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+			</div>
+		
+		<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-random uk-icon-medium"></i>Responsive design</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+		</div>
+		<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-image uk-icon-medium"></i>Fully layered PSD</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took scrambled it to make a type specimen book. It has survived not only five centuries</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+		</div>
+		<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-code uk-icon-medium"></i>Ready for Coding</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+		</div>
+	</div>
+	<!-- Ends Content Area -->
+	
+	<!-- Slide Show -->
+	<div class="uk-grid">
+		<div class="uk-width-1-1">
+			<div class="uk-slidenav-position" data-uk-slider="{autoplay: true, autoplayInterval:2000, center: true}">
+				<div class="uk-slider-container">
+					<ul class="uk-slider uk-grid-width-small-1-3 uk-grid-width-medium-1-4 uk-grid-width-large-1-6">
+						<li><img src="images/mahbub.jpg" alt=""></li>
+						<li><img src="images/apon1.jpg" alt=""></li>
+						<li><img src="images/tapan.jpg" alt=""></li>
+						<li><img src="images/apon2.jpg" alt=""></li>
+						<li><img src="images/mahbub.jpg" alt=""></li>
+						<li><img src="images/apon1.jpg" alt=""></li>
+						<li><img src="images/tapan.jpg" alt=""></li>
+						<li><img src="images/apon2.jpg" alt=""></li>
+						<li><img src="images/mahbub.jpg" alt=""></li>
+						<li><img src="images/apon1.jpg" alt=""></li>
+						<li><img src="images/tapan.jpg" alt=""></li>
+						<li><img src="images/apon2.jpg" alt=""></li>
+						<li><img src="images/mahbub.jpg" alt=""></li>
+						<li><img src="images/apon1.jpg" alt=""></li>
+						<li><img src="images/tapan.jpg" alt=""></li>
+						<li><img src="images/apon2.jpg" alt=""></li>							
+					</ul>
+				</div>
+				<a href="#" class="uk-overlay-background-red uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slider-item="previous"></a>
+				<a href="#" class="uk-overlay-background-red uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slider-item="next"></a>
+			</div>
+		</div>
+	</div><!-- End of Thamnail Slider -->
+
+			<!-- 2nd line with text overlay -->
+			<!-- widht classes on grid/row with unordered list -->
+		<ul class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin>
+			<li class="uk-text-center">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img class="uk-align-center uk-thumbnail uk-border-rounded" src="images/mahbub.jpg" alt="">
+					<figcaption class="uk-overlay-panel">This is a simple text overlay...</figcaption>
+					<a class="uk-position-cover" href="#modal1" data-uk-modal="{target:'#modal1',bgclose:false}"></a>
+				</figure>
+			</li>
+			<li class="uk-text-center">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img class="uk-border-circle" src="images/apon1.jpg" alt="">
+					<img class="uk-overlay-panel uk-overlay-image uk-thumbnail uk-overlay-scale uk-align-center uk-thumbnail uk-border-circle" src="images/spider.jpg" alt="">
+					<figcaption class="uk-overlay-panel">Apon...</figcaption>
+					<a class="uk-position-cover" href="#modal2" data-uk-modal="{target:'#modal2',bgclose:true}"></a>
+				</figure>
+			</li>
+			<li class="uk-text-center">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img class="uk-align-center uk-thumbnail uk-thumbnail uk-border-circle" src="images/tapan.jpg" alt="">
+					<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">Tapan...</figcaption>
+					<a class="uk-position-cover" href="#modal1" data-uk-modal="{target:'#modal1',bgclose:false}"></a>
+				</figure>
+			</li>
+			<li class="uk-text-center">
+				<figure class="uk-overlay uk-overlay-hover">
+					<img class="uk-align-center uk-thumbnail uk-border-rounded" src="images/apon2.jpg" alt="">
+					<figcaption class="uk-overlay-panel">This is a simple text overlay...</figcaption>
+					<a class="uk-position-cover" href="#modal3" data-uk-modal="{target:'#modal3',bgclose:true}"></a>
+				</figure>
+			</li>
+			
+		</ul><!-- End of Thumbnail IMG with Overlay Text -->
+		<!-- row 5 images -->
+		<!-- Modal Popups, modal content, uk-modal style controls over bg color -->
+		<div id="modal1" class="uk-modal">
+			<div class="uk-modal-dialog">
+				<a href="#" class="uk-modal-close uk-close uk-close-alt"></a>
+				<h3>Mobile Apps</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		</div> <!-- UK Modal1 Ends -->
+		<div id="modal2" class="uk-modal">
+			<div class="uk-modal-dialog">
+				<a href="#" class="uk-modal-close uk-close uk-close-lightbox"></a>
+				<h3>To the Point!</h3>
+				<img class="uk-align-left" src="images/responsive1.jpg" alt="">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy..</p>
+			</div>
+		</div>
+		<div id="modal3" class="uk-modal">
+			<div class="uk-modal-dialog uk-model-dialog-lightbox">
+				<a href="#" class="uk-modal-close uk-close uk-close-alt"></a>
+				<img src="images/girl.jpeg" alt=""/>
+			</div>
+		</div><!-- End of thumbnail -->
+		<br /><br />
+		<!-- Logo Section -->
+		<div class="uk-grid" data-uk-grid-margin>
+			<div class="uk-width-medium-1-2">
+				<h3 class="uk-panel-title"><i class="uk-icon-comments icon-heading uk-icon-medium"></i>Testinonials</h3>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+				<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+			<div class="uk-width-medium-1-2">
+				<h3 class="uk-panel-title"><i class="uk-icon-users icon-heading uk-icon-medium"></i>Our Clients</h3>
+				<ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-3" data-uk-grid-margin>
+					<li>
+						<img src="logos/intel.png" alt="">
+					</li>
+					<li>
+						<img src="logos/dell.png" alt="">
+					</li>
+					<li>
+						<img src="logos/apple.png" alt="">
+					</li>
+					<li>
+						<img src="logos/intel-android.png" alt="">
+					</li>
+					<li>
+						<img src="logos/laptop.png" alt="">
+					</li>
+					<li>
+						<img src="logos/microsoft.png" alt="">
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<!-- row 6 logos -->
+		
+		<div class="uk-grid" data-uk-grid-margin>
+			<div class="uk-width-small-1-2 uk-width-medium-6-10">
+				<div class="uk-panel uk-panel-box uk-panel-box-primary">
+					<h3 class="uk-panel-title"><i class="uk-icon-thumbs-up icon-heading uk-icon-medium">Our Strategy</i></h3>
+					<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div><!-- panel -->
+			</div>
+			<div class="uk-width-small-1-2 uk-width-medium-4-10">
+			<div class="uk-button-group uk-margin">
+				<a href="#" class="uk-button uk-button-primary uk-button-large"><i class="uk-icon-download lg-button-icon"> Download PSD</i></a>
+				<a href="#" class="uk-button uk-button-success uk-button-large"><i class="uk-icon-download lg-button-icon"> Download PSD</i></a>
+				<a href="#" class="uk-button uk-button-danger uk-button-large"><i class="uk-icon-download lg-button-icon"> Download PSD</i></a>
+			</div>
+			</div>
+		</div>
+</div>
+		<!-- contant area -->
+<div class="uk-container uk-container-center main-content">
+	
+		<div class="uk-grid uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match="{target:'.uk-panel'}">
+			<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<div class="uk-badge uk-panel-badge uk-badge-danger">New!</div>
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-pencil-square uk-icon-medium"></i>Clean Theme</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries It has survived</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+			</div>
+		
+		<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-random uk-icon-medium"></i>Responsive design</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+		</div>
+		<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-image uk-icon-medium"></i>Fully layered PSD</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took scrambled it to make a type specimen book. It has survived not only five centuries</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+		</div>
+		<div>
+				<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-box-primary-hover">
+					<h3 class="uk-panel-title"><i class="icon-heading uk-icon-code uk-icon-medium"></i>Ready for Coding</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+					<p class="readmore"><a href="#"><i class="uk-icon-angle-double-right icon-heading"></i>Read More</a></p>
+				</div>
+		</div>
+	</div>
+	<!-- Ends Content Area -->
+
+
+	</div>
+
+<br /><br /><br />
+
+	<div class="footbg menu-wrapper" data-uk-sticky>
+		<div class="uk-container uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-1-1 uk-text-center">
+					<h3>copyright &copy;2019 | all right reserved</h3>
+					<p>-Mahbub Phone: +8801714497282</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/ukit.min.js"></script>
+	<script src="js/components/slideshow.min.js"></script>
+	<script src="js/components/slideshow.fx.min.js"></script>
+	<script src="js/components/slideshow.almost-flat.min.js"></script>
+	<script src="js/components/sticky.min.js"></script>
+	<script src="js/components/slider.min.js"></script>
+</body>
+</html>
